@@ -8,13 +8,19 @@ To create an inclusive digital environment that provides equal access to informa
 
 ## 🏗️ Architecture
 
-### Microservices Architecture
-- **Frontend Service**: React.js with accessibility-first approach
-- **User Service**: User management and accessibility profiles
-- **Content Service**: Accessible content management
-- **Media Service**: Image processing with alt-text generation
-- **API Gateway**: Centralized routing and authentication
-- **Notification Service**: Multi-format notifications (text, audio, braille)
+### Simplified Frontend-First Architecture
+- **Frontend Application**: React.js with accessibility-first approach
+- **TypeScript**: Type-safe development
+- **React Router**: Client-side routing
+- **Semantic HTML**: WCAG 2.1 AAA compliant structure
+- **CSS-in-JS**: Inline styling for accessibility
+- **Testing**: Jest with accessibility testing
+
+### Future Scalability (When Needed)
+- **Backend API**: Node.js/Express (can be added later)
+- **Database**: PostgreSQL (can be added later)
+- **Authentication**: JWT-based (can be added later)
+- **Media Processing**: Image alt-text generation (can be added later)
 
 ## 🌐 Accessibility Features
 
