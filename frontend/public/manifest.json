@@ -1,0 +1,19 @@
+{
+  "short_name": "Accessibility Platform",
+  "name": "Global Accessibility Platform",
+  "description": "Making the web accessible for everyone with WCAG 2.1 AAA compliance",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "accessibility": {
+    "features": ["screenReader", "keyboardNavigation", "highContrast", "textScaling"]
+  }
+}

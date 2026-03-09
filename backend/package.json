@@ -1,0 +1,44 @@
+{
+  "name": "accessibility-platform-backend",
+  "version": "1.0.0",
+  "description": "Backend microservices for accessibility platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:user-service\" \"npm run dev:content-service\" \"npm run dev:media-service\" \"npm run dev:notification-service\" \"npm run dev:api-gateway\"",
+    "dev:user-service": "cd user-service && npm run dev",
+    "dev:content-service": "cd content-service && npm run dev",
+    "dev:media-service": "cd media-service && npm run dev",
+    "dev:notification-service": "cd notification-service && npm run dev",
+    "dev:api-gateway": "cd api-gateway && npm run dev",
+    "build": "npm run build:all",
+    "build:all": "npm run build:user-service && npm run build:content-service && npm run build:media-service && npm run build:notification-service && npm run build:api-gateway",
+    "build:user-service": "cd user-service && npm run build",
+    "build:content-service": "cd content-service && npm run build",
+    "build:media-service": "cd media-service && npm run build",
+    "build:notification-service": "cd notification-service && npm run build",
+    "build:api-gateway": "cd api-gateway && npm run build",
+    "install:all": "npm install && npm run install:user-service && npm run install:content-service && npm run install:media-service && npm run install:notification-service && npm run install:api-gateway",
+    "install:user-service": "cd user-service && npm install",
+    "install:content-service": "cd content-service && npm install",
+    "install:media-service": "cd media-service && npm install",
+    "install:notification-service": "cd notification-service && npm install",
+    "install:api-gateway": "cd api-gateway && npm install",
+    "test": "npm run test:all",
+    "test:all": "npm run test:user-service && npm run test:content-service && npm run test:media-service && npm run test:notification-service && npm run test:api-gateway",
+    "test:user-service": "cd user-service && npm test",
+    "test:content-service": "cd content-service && npm test",
+    "test:media-service": "cd media-service && npm test",
+    "test:notification-service": "cd notification-service && npm test",
+    "test:api-gateway": "cd api-gateway && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "workspaces": [
+    "user-service",
+    "content-service",
+    "media-service",
+    "notification-service",
+    "api-gateway"
+  ]
+}
